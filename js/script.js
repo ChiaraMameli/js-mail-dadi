@@ -1,16 +1,16 @@
 // MAIL
-// Creo Array
 const mail = ['pippo@gmail.com', 'ciccio@gmail.com', 'giorgio@gmail.com', 'michele@gmail.com'];
+const mailResult = document.getElementById('email');
+const buttonSend = document.getElementById('btn-email');
 
- // Chiedo all'utente di inserire una mail
-let mailInput = prompt('Inserisci qui la tua email');
+buttonSend.addEventListener('click', function(){
+    if(mail.includes(mailResult.value)) {
+        alert('Benvenuto');
+    } else {
+        alert('Spiacenti');
+    }
+})
 
- // Verifico che la mail inserita sia valida e stampo un messaggio appropriato sull’esito del controllo.
-if(mail.includes(mailInput)) {
-     alert('Benvenuto');
-} else {
-     alert('Spiacenti');
-}
 
 // GIOCO DEI DADI
 
@@ -21,11 +21,11 @@ console.log(player, computer);
 // Determino il vincitore e stampo in console
 
 if(player > computer) {
-    alert('Hai vinto!');
+    //alert('Hai vinto!');
 } else if (player < computer) {
-    alert('Ritenta!');
+    //alert('Ritenta!');
 } else {
-    alert('Parità!');
+    //alert('Parità!');
 }
 
 

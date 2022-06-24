@@ -1,0 +1,19 @@
+/* EX EMAIL */
+
+.split {
+    height: 100vh;
+    width: 50%;
+}
+
+.split-left {
+    background-color: #FFF5A3;
+}
+
+.split-left button {
+    background-color: #1B4D42;
+}
+
+.split-right {
+    background-color: #1B4D42;
+}
+
