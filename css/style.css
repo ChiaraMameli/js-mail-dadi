@@ -3,6 +3,7 @@
 .split {
     height: 100vh;
     width: 50%;
+    padding: 50px;
 }
 
 .split-left {
@@ -17,3 +18,31 @@
     background-color: #1B4D42;
 }
 
+/* EX DICE */
+
+.face {
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    border: 10px solid blue;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-red .dot {
+    border: 10px solid red;
+}

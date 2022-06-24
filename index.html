@@ -17,8 +17,20 @@
         <button id="btn-email" class="text-white" type="button">INVIA</button>
     </div>
 
-    <div class="split split-right">
+    <div class="split split-right row align-items-center justify-content-around text-center">
+        <h1 class="text-white"><i>Roll the dice</i></h1>
+        <div class="col">
+            <h2 class="text-white mb-3">Il tuo dado</h2>
+            <div id="player-face" class="face bg-red position-relative"></div>
+        </div>
+        <div class="col">
+            <h2 class="text-white mb-3">Il tuo avversario</h2>
+            <div id="computer-face" class="face bg-blue position-relative"></div>
+        </div>
 
+        <div class="col-12 text-center">
+            <button id="roll" type="button" class="btn btn-outline-light">Lancia il tuo dado</button>
+        </div>
     </div>
 </div>
 <script src="js/script.js"></script>
