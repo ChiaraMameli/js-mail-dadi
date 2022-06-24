@@ -1,10 +1,16 @@
-/*
-Mail
-Crea (inventa) una lista di inidirizzi mail autorizzati.
-Chiedi all’utente la sua email,
-controlla che sia nella lista di chi può accedere,
-stampa in console un messaggio appropriato sull’esito del controllo. ("Benvenuto" se la mail è nella lista, "Spiacenti" se non lo è);
-*/
+// Creo Array
+const mail = ['pippo@gmail.com', 'ciccio@gmail.com', 'giorgio@gmail.com', 'michele@gmail.com'];
+
+// Chiedo all'utente di inserire una mail
+let mailInput = prompt('Inserisci qui la tua email', 'pippo@gmail.com');
+
+// Verifico che la mail inserita sia valida e stampo un messaggio appropriato sull’esito del controllo.
+if(mail.includes(mailInput)) {
+    alert('Benvenuto');
+} else {
+    alert('Spiacenti');
+}
+
 /*
 Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
