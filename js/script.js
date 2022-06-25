@@ -1,15 +1,18 @@
 // MAIL
-const mail = ['pippo@gmail.com', 'ciccio@gmail.com', 'giorgio@gmail.com', 'michele@gmail.com'];
+const mail = ['pippo@gmail.com'];
 const mailResult = document.getElementById('email');
 const buttonSend = document.getElementById('btn-email');
 
 buttonSend.addEventListener('click', function(){
-    if(mail.includes(mailResult.value)) {
-        alert('Benvenuto');
-    } else {
-        alert('Spiacenti');
-    }
-})
+    for(i = 0; i < mail.length; i++) {
+
+        if(mail[i] === mailResult.value) {
+            alert('Benvenuto');
+        } else {
+            alert('Spiacenti');
+        }
+}})
+
 
 
 // GIOCO DEI DADI
@@ -37,7 +40,7 @@ roll.addEventListener('click', function(){
     const three = `${one} ${two}`;
     const four = `<div class="dot position-absolute top-0 end-0"></div><div class="dot position-absolute bottom-0 start-0"></div><div class="dot position-absolute top-0 start-0"></div><div class="dot position-absolute bottom-0 end-0"></div>`;
     const five = `${one} ${four}`;
-    const six = `${five} <div class="dot position-absolute top-50 start-0 translate-middle-y"></div><div class="dot position-absolute top-50 end-0 translate-middle-y"></div>`;
+    const six = `${four} <div class="dot position-absolute top-50 start-0 translate-middle-y"></div><div class="dot position-absolute top-50 end-0 translate-middle-y"></div>`;
 
     let playerFace = document.getElementById('player-face');
     let computerFace = document.getElementById('computer-face');

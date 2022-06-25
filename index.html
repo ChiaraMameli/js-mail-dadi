@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3395c408c6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
 <div class="d-flex">
+    <!-- EMAIL -->
     <div class="split split-left d-flex flex-column justify-content-center align-items-center">
         <label for="email" class="mb-3">Inserisci qui la tua email</label>
         <input type="email" class="mb-3" id="email">
         <button id="btn-email" class="text-white" type="button">INVIA</button>
     </div>
 
+    <!-- DICE -->
     <div class="split split-right row align-items-center justify-content-around text-center">
-        <h1 class="text-white"><i>Roll the dice</i></h1>
+        <h1 class="text-white">Roll the dice</h1>
         <div class="col">
             <h2 class="text-white mb-3">Il tuo dado</h2>
             <div id="player-face" class="face bg-red position-relative"></div>
